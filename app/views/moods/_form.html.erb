@@ -2,17 +2,19 @@
   <div class="field" id='mood_entry'>
     
     <input type='radio' value='happy' name='mood[mood]' id='happy' />
-    <label for='happy' id='happy_label'></label>
+    <label for='happy' id='happy_label' class='text-center'>Happy</label>
 
     <input type='radio' value='sad' name='mood[mood]' id='sad' />
-    <label for='sad' id='sad_label'></label>
+    <label for='sad' id='sad_label'>Sad</label>
 
     <input type='radio' value='angry' name='mood[mood]' id='angry' />
-    <label for='angry' id='angry_label'></label>
+    <label for='angry' id='angry_label'>Angry</label>
 
     <input type='radio' value='excited' name='mood[mood]' id='excited' />
-    <label for='excited' id='excited_label'></label>
+    <label for='excited' id='excited_label'>Excited</label>
   </div>
+
+  <div class='clearfix'></div>
 
   <div class="actions">
     <%= f.submit "Save", :class=> 'btn btn-success', :id => 'mood_save' %>
