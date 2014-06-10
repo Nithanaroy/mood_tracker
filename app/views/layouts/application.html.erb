@@ -6,9 +6,16 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class='container'>
 
-<%= yield %>
+
+	<div class="page-header text-center">
+		<h1>Mood Finder</h1>
+	</div>
+
+	<div class='container'>
+		<%= yield %>
+	</div>
 
 </body>
 </html>

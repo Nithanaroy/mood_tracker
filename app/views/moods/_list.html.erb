@@ -1,0 +1,17 @@
+<table class='table table-striped table-bordered table-responsive'>
+  <thead>
+    <tr>
+      <th>Mood</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @moods.each do |mood| %>
+      <tr>
+        <td><%= mood.mood %></td>
+        <td><%= mood.mood_count %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

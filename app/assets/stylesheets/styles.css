@@ -1,0 +1,35 @@
+#mood_entry input[type=radio] {
+	display: none;
+}
+
+#mood_entry label {
+    display:inline-block;
+    width:240px;
+    height:240px;
+}
+
+#mood_entry input[type="radio"]:checked + label span {
+    background: red;
+}
+
+#mood_entry #happy_label {
+    background:url(/images/happy.png) left top no-repeat;	
+}
+
+#mood_entry #sad_label {
+    background:url(/images/sad.png) left top no-repeat;	
+}
+
+#mood_entry #angry_label {
+    background:url(/images/angry.png) left top no-repeat;	
+}
+
+#mood_entry #excited_label {
+    background:url(/images/excited.png) left top no-repeat;	
+}
+
+#mood_save {
+	display: block;
+	margin: 20px auto;
+	width: 200px;
+}

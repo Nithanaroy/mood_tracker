@@ -1,0 +1,14 @@
+<div class="alert alert-info">Listing moods for today</div>
+
+<h1>Listing moods</h1>
+
+<br />
+
+<input type='text' class='datepicker' id='moods_for_date' value='<%= @for_date %>'>
+
+<br />
+<br />
+
+<div id='moods_list'>
+  <%= render "list" %>
+</div>

@@ -1,4 +1,11 @@
 MoodTracker::Application.routes.draw do
+
+  get 'moods/list' => 'moods#moods_list'
+  get 'moods/iamthesecretownwer' => 'moods#index'
+  get 'moods/new' => 'moods#new'
+  post 'moods' => 'moods#create'
+  # resources :moods
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
