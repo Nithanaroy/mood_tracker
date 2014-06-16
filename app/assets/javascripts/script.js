@@ -6,6 +6,10 @@ $(function () {
 		dateFormat: 'yy-mm-dd'
 	});
 
+	$("#home_btn").hide().click(function() {
+		window.location.reload();
+	});
+
 	$("#moods_for_date").datepicker("option", "onSelect", 
 		function(dateText){
             $.ajax({
@@ -33,8 +37,9 @@ $(function () {
         		after_mood_save();
         	},
         	error: function(xhr) {
-        		// $.parseJSON(xhr.responseText).errors
-            	update_notice('Something doesnt seem right!', 'alert-danger');
+        		// var errors = $.parseJSON(xhr.responseText).errors;
+        		var errors = 'OOPS! You forgot to select your mood'
+            	update_notice(errors, 'alert-danger');
         	}
         });
         return false;
@@ -44,7 +49,7 @@ $(function () {
 		$("#mood_entry label").each(function() {
 			if ($(this).css("opacity") != 1) $(this).hide(300);
 		});
-		$("#mood_save").hide();
+		$("#mood_save, #home_btn").toggle();
 	}
 
 	// change the opacity of smileys

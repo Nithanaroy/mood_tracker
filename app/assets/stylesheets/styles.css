@@ -32,8 +32,10 @@
     background:url(/images/excited.png) center bottom no-repeat;	
 }
 
-#mood_save {
-	display: block;
-	margin: 20px auto;
-	width: 200px;
+.actions .btn {
+    width: 200px;
+}
+
+.hide {
+    display: none;
 }

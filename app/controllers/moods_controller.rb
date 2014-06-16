@@ -35,7 +35,7 @@ class MoodsController < ApplicationController
     if @mood.save
       render text: "Saved!"
     else
-      render :json => { :errors => 'Something went wrong.' }, :status => 422
+      render :json => { :errors => @mood.errors.full_messages }, :status => 422
     end
   end
 
